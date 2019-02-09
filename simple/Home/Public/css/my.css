@@ -1,0 +1,82 @@
+/*Introduce*/
+
+.my-bg-color {
+	background-color: #000000 !important;
+}
+
+.my-font-color-black {
+	color: #000000 !important;
+}
+
+.my-overflow {
+	overflow-y: auto;
+	max-height: 30vh;
+}
+
+.my-slogan {
+	margin-left: 18vw;
+}
+
+.my-exp-box {
+	width: 70vw;
+	text-indent: 2rem;
+	margin-left: 18vw;
+	margin-top: 1vh;
+}
+
+.my-clean-text-indent {
+	text-indent: 0rem;
+}
+
+
+/*Knowleage*/
+
+.my-solid-radius-20-2 {
+	border-radius: 20px;
+	border: solid 2px #B06D0F;
+}
+
+.my-cleanstyle-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#english-paging-ul>li {
+	margin-left: 1.5vw;
+	list-style: none;
+}
+
+.my-padding-left>li {
+	margin-left: 2vw;
+}
+
+.my-paging-img {
+	width: 100%;
+	height: 18vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+.my-margin-b-2vh {
+	margin-bottom: 2vh;
+}
+
+.my-padding-12 {
+	padding: 12px;
+}
+
+.my-border-radius {
+	border: solid 2px;
+	border-radius: 20px;
+}
+
+.carousel-img-height {
+	height: 70vh;
+}
+
+
+/*share*/
+.img_click:hover {
+	cursor: pointer;
+}

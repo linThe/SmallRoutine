@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<header>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Introduce</title>
+
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}templatemo-style.css">
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}my.css" />
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}menu.css" />
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}reset.css" />
+
+	</header>
+	<!--New idea : 加一个悬浮按钮，返回顶部的功能-->
+
+	<body id="menu_Content">
+		<div id="item1" class="container-fluid tm-header-inner item">
+			<include file="MasterPage/nav" />
+		</div>
+
+		<!--正文-->
+		<div class="tm-home-img-container ">
+			<p class="my-slogan">{$sent_data["its_slogan"]}</p>
+			<div class="my-exp-box my-overflow">
+				<p name="sentiment">{$sent_data["its_content"]}</p>
+			</div>
+		</div>
+		<section class="tm-section">
+			<div  class="container-fluid">
+				<div id="item2" class="row item">
+					<div class="col-12">
+						<h2 class="tm-title text-center">十二梦</h2>
+						<p class="tm-subtitle text-center">My dream</p>
+					</div>
+				</div>
+
+				<foreach name="dream_data" item="val">
+						<div class="row">
+							<div class="col-12">
+								<div id="{$val['itd_items']}" class="tm-content-box tm-margin-b-40 item ">
+									<img src="{$Think.const.IMG_URL}Introduce/{$val['itd_imgs']}" alt="Image" class="tm-margin-b-20 img-fluid">
+									<h4 class="tm-margin-b-20 tm-black-text text-center">{$val['itd_dreams']}</h4>
+									<p class="tm-marg·in-b-20 text-center">{$val['itd_describe']}</p>
+								</div>
+							</div>
+						</div>
+				</foreach>
+				<!-- row -->
+				<h1 class="text-center">Not The End <br /> More</h1>
+			</div>
+		</section>
+		
+		<!--页脚-->
+		<!--服务器绝对路径访问-->
+		<!--<include file="http://127.0.0.1/simple/Home/Public/Page/footer.html"/>-->
+		<!--默认访问: (当前模型的View下的文件夹)/文件   访问其他模型：模型@(view下文件夹)/文件-->
+		<include file="MasterPage/footer"/>
+		
+			
+		<!--悬浮菜单-->
+		<div id="menu" >
+			<ul class="my-cleanstyle-ul">
+				<li>
+					<a href="#item1" class="cur">首页</a>
+				</li>
+				<li>
+					<a href="#item2">Dream</a>
+				</li>
+				<li>
+					<a href="#item3">Middle</a>
+				</li>
+				<li>
+					<a href="#item4">Next</a>
+				</li>
+				<li>
+					<a href="#item5">底栏</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- load JS files -->
+		<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/js/bootstrap.js"></script>
+		<script src="{$Think.const.JS_URL}myjs.js"></script>
+		<script src="{$Think.const.JS_URL}tether.min.js"></script>
+		<script src="{$Think.const.JS_URL}menu.js"></script>
+		<!--奇了怪了怎么这句话只能在这个页面加载
+			<script>$("footer").load("/simple/Home/View/MasterPage/footer.html");</script>
+		//模拟失败
+		<script>
+		
+	</script>-->
+	
+	</body>
+
+</html>

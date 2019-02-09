@@ -1,0 +1,1 @@
+a:7:{i:0;s:6:"reg_id";i:1;s:12:"reg_username";i:2;s:12:"reg_password";i:3;s:6:"reg_qq";i:4;s:7:"reg_tel";s:3:"_pk";s:6:"reg_id";s:5:"_type";a:5:{s:6:"reg_id";s:7:"int(11)";s:12:"reg_username";s:11:"varchar(45)";s:12:"reg_password";s:11:"varchar(45)";s:6:"reg_qq";s:11:"varchar(45)";s:7:"reg_tel";s:11:"varchar(45)";}}

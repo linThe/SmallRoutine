@@ -1,0 +1,4 @@
+[ 2019-01-22T08:56:19+08:00 ] 127.0.0.1 /simple/index.php?__hbt=1548118574648
+ERR: 1146:Table 'simple.sp_introduce_dream' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sp_introduce_dream`
+

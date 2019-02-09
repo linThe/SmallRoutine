@@ -1,0 +1,12 @@
+[ 2019-01-18T15:29:08+08:00 ] 127.0.0.1 /simple/index.php/Home/Knowleage/__ACTION__/itemCount/480
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__ACTION__
+
+[ 2019-01-18T16:12:30+08:00 ] 127.0.0.1 /simple/index.php/Home/Knowleage/__ACTION__/itemCount/480
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:__ACTION__
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="referrer" content="no-referrer">
+
+		<title>Share</title>
+
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1467430166_4040916.css">
+
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}templatemo-style.css">
+
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}musicindex.css" />
+
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}my.css" />
+
+	</head>
+
+	<body>
+
+		<div class="tm-header">
+
+			<div class="container-fluid">
+
+				<div class="tm-header-inner">
+
+					<include file="MasterPage/nav" />
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<section>
+
+			<div class="container-fluid">
+
+				<div class="row tm-margin-b-50">
+
+					<!--视频-->
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+						<br />
+
+						<!--临时的间距-->
+
+						<h2 class="text-center my-margin-b-2vh">视频</h2>
+
+						<div class="container my-padding-12 my-border-radius">
+
+							<!--轮播-->
+
+							<div id="video-content" class="carousel slide" data-ride="carousel">
+
+								<!--指示符-->
+
+								<ul class="carousel-indicators">
+
+									<li data-target="#video-content" data-slide-to="0" class="active"></li>
+
+									<li data-target="#video-content" data-slide-to="1"></li>
+
+									<li data-target="#video-content" data-slide-to="2"></li>
+
+								</ul>
+
+								<!--轮播图片-->
+
+								<div class="carousel-inner">
+
+									<div class="carousel-item active">
+										<a href="__CONTROLLER__/video">
+										<img class="carousel-img-height " src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" />
+										</a>
+
+									</div>
+
+									<div class="carousel-item ">
+										<a href="__CONTROLLER__/video">
+										<img class="carousel-img-height " src="https://static.runoob.com/images/mix/img_nature_wide.jpg" />
+										</a>
+									</div>
+
+									<div class="carousel-item ">
+										<a href="__CONTROLLER__/video">
+										<img class="carousel-img-height " src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" />
+										</a>
+									</div>
+
+								</div>
+
+								<!--左右切换按钮-->
+
+								<a class="carousel-control-prev" href="#video-content" data-slide="prev">
+
+									<span class="carousel-control-prev-icon"></span>
+
+								</a>
+
+								<a class="carousel-control-next" href="#video-content" data-slide="next">
+
+									<span class="carousel-control-next-icon"></span>
+
+								</a>
+
+							</div>
+
+							<br />
+
+							<h6 class="text-center">视频内容标题</h6>
+
+						</div>
+
+					</div>
+
+					<!--文档-->
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+						<br />
+
+						<!--临时的间距-->
+
+						<h2 class="text-center my-margin-b-2vh">文档</h2>
+
+						<div class="container my-border-radius my-padding-12">
+
+							<!--列表-->
+
+							<div id="alist">
+							</div>
+
+							<br />
+
+							<h6 class="text-center">今日文档</h6>
+
+						</div>
+
+					</div>
+
+					<!--音频-->
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+						<br />
+
+						<!--临时的间距-->
+
+						<h2 class="text-center"="margin-bottom: 2vh;">音频</h2>
+
+						<div class="container my-border-radius my-padding-12">
+
+							<!----------------------------------------->
+
+							<div class="wrapper">
+
+								<!-- 背景图片 -->
+
+								<div class="background">
+
+									<div class="music-lyric">
+
+										<div class="lyric-view">
+
+											<ul class="lyric"></ul>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="content">
+
+									<audio src=""></audio>
+
+									<div class="music-massage">
+
+										<p class="musicname" title=""></p>
+
+										<p class="musicer" title=""></p>
+
+										<p class="record" title="" data-id=""></p>
+
+									</div>
+
+									<!-- 分享，收藏，喜欢按钮 -->
+
+									<div class="music-icon">
+
+										<a class="m-icon m-fenxiang colored" href="http://service.weibo.com/share/share.php?title=#_loginLayer_1466697157538" target="new"></a>
+
+										<span class="m-icon m-star colored"></span>
+
+										<span class="m-icon m-heart colored"></span>
+
+									</div>
+
+								</div>
+
+								<!-- 进度条 -->
+
+								<span class="basebar">
+
+									<span class="progressbar"></span>
+
+								</span>
+
+								<div class="controls">
+
+									<!-- 音乐播放。换频道，下一曲按钮 -->
+
+									<div class="play-control">
+
+										<span class="m-icon m-play btn1" title="播放/暂停"></span>
+
+										<span class="m-icon m-change btn2" title="换频道"></span>
+
+										<span class="m-icon m-next btn3" title="换曲"></span>
+
+									</div>
+
+									<!-- 循环播放，随机播放按钮 -->
+
+									<div class="music-control">
+
+										<span class="m-icon m-xunhuan colored"></span>
+
+										<span class="m-icon m-lyric colored lyriced"></span>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<!----------------------------------------->
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<include file="MasterPage/footer" />
+
+			
+
+		<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/js/bootstrap.js"></script>
+
+		<script src="{$Think.const.JS_URL}myjs.js"></script>
+		<script src="{$Think.const.JS_URL}tether.min.js"></script>
+
+
+		<script src="{$Think.const.JS_URL}Random-music.js"></script>
+
+		<script type="text/javascript" src="{$Think.const.JS_URL}jsDom_Share.js"></script>
+
+	</body>
+
+</html>

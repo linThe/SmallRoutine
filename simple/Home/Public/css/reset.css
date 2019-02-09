@@ -1,0 +1,7 @@
+*[hidefocus]{outline:none;}
+li{list-style:none;}
+/*
+body,textarea,select,input{font-family:helvetica,arial,simsun,sans-serif;font-size:14px;color:#000;}*/
+a,button{cursor:pointer;}
+a{text-decoration:none;color:#000; outline: none;}
+a:hover{text-decoration:none;}

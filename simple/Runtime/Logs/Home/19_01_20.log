@@ -1,0 +1,12 @@
+[ 2019-01-20T23:21:18+08:00 ] 127.0.0.1 /simple/index.php
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-01-20T23:31:40+08:00 ] 127.0.0.1 /simple/index.php?__hbt=1547998298696
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-01-20T23:32:50+08:00 ] 127.0.0.1 /simple/index.php?__hbt=1547998298696
+ERR: SQLSTATE[HY000] [1049] Unknown database 'simple'
+
+[ 2019-01-20T23:41:50+08:00 ] 127.0.0.1 /simple/index.php?__hbt=1547998908409
+ERR: SQLSTATE[HY000] [1049] Unknown database 'simple'
+
